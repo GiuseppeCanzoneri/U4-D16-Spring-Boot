@@ -74,16 +74,19 @@ public class OrderRunner implements CommandLineRunner {
 		System.out.println();
 
 		logger.info("Acquisition Time: {}", order.getAcquisitionTime());
-
 		System.out.println();
 
+		logger.info("--------------------COSTO TOTALE-----------------");
+		logger.info("Total Amount: {}", totalAmount);
+
+		logger.info("-------------------------------------------------");
+
 		for (OrderItem item : order.getItems()) {
-			logger.info("Item: {}", item.getMenuItem().getName());
+			logger.info("Ordine: {}", item.getMenuItem().getName());
 			logger.info("Note: {}", item.getNote());
 
 			System.out.println();
 
-			logger.info("Total Amount: {}", totalAmount);
 		}
 	}
 }
