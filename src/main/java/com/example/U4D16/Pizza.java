@@ -11,5 +11,4 @@ import lombok.Setter;
 public class Pizza extends MenuItem {
 	private List<String> toppings;
 
-	// getter e setter
 }

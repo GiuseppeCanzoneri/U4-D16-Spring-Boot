@@ -2,14 +2,19 @@ package com.example.U4D16;
 
 import java.util.Arrays;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class MenuConfiguration {
+	@Value("${cover.charge}")
+	private double coverCharge;
+
 	@Bean
 	Menu menu() {
 		Menu menu = new Menu();
+		menu.setCoverCharge(coverCharge);
 
 		// Creazione delle pizze
 		Pizza margherita = new Pizza();
@@ -54,8 +59,4 @@ public class MenuConfiguration {
 		return menu;
 	}
 
-	@Bean
-	MenuItemPrinter menuItemPrinter() {
-		return new MenuItemPrinter();
-	}
 }

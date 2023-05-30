@@ -10,6 +10,7 @@ import lombok.Setter;
 @Setter
 public class Menu {
 	private List<MenuItem> menuItems;
+	private double coverCharge;
 
 	public Menu() {
 		menuItems = new ArrayList<>();
@@ -19,4 +20,13 @@ public class Menu {
 		menuItems.add(menuItem);
 	}
 
+	public double getTotalAmount(Order order) {
+		double totalAmount = order.getNumberOfGuests() * coverCharge;
+
+		for (OrderItem item : order.getItems()) {
+			totalAmount += item.getMenuItem().getPrice();
+		}
+
+		return totalAmount;
+	}
 }
