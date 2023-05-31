@@ -21,7 +21,7 @@ public class Menu {
 	}
 
 	public double getTotalAmount(Order order) {
-		double totalAmount = order.getNumberOfGuests() * coverCharge;
+		double totalAmount = order.getNumberOfGuests() + coverCharge;
 
 		for (OrderItem item : order.getItems()) {
 			totalAmount += item.getMenuItem().getPrice();

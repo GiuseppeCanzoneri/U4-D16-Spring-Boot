@@ -28,7 +28,7 @@ public class MenuConfiguration {
 		Pizza doubleHamMargherita = new ToppingDecorator(margherita, "Prosciutto", 2.0);
 		doubleHamMargherita.setName("Margherita + Doppio Prosciutto");
 
-		Pizza familySizeMargherita = new FamilySizeDecorator(margherita, 5.0);
+		Pizza familySizeMargherita = new FamilySizeDecorator(margherita, 14.0);
 		familySizeMargherita.setName("Margherita (Dimensione Famiglia)");
 
 		// Creazione delle bevande
