@@ -25,7 +25,7 @@ public class MenuConfiguration {
 
 		Pizza hawaiian = new ToppingDecorator(margherita, "Ananas", 1.5);
 		hawaiian.setName("Hawaiian Pizza");
-
+		hawaiian.setToppings(Arrays.asList("Meno ananas + patatine"));
 		Pizza doubleHamMargherita = new ToppingDecorator(margherita, "Prosciutto", 2.0);
 		doubleHamMargherita.setName("Margherita + Doppio Prosciutto");
 

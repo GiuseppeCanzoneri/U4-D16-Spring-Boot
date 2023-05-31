@@ -12,7 +12,5 @@ public class Main {
 		MenuItemPrinter menuItemPrinter = context.getBean(MenuItemPrinter.class);
 		menuItemPrinter.printMenu();
 
-		// Aggiungi qui il codice per visualizzare gli ordini
-		// ...
 	}
 }
