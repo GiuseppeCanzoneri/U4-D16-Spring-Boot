@@ -7,6 +7,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
+
 public class MenuConfiguration {
 	@Value("${cover.charge}")
 	private double coverCharge;
