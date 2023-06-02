@@ -1,10 +1,9 @@
-package com.example.U4D16;
-
-import java.util.List;
+package com.example.U4D16.entities;
 
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
+import jakarta.persistence.Entity;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,7 +12,8 @@ import lombok.Setter;
 
 @Component
 @Scope("prototype")
-public class Pizza extends MenuItem {
-	private List<String> toppings;
+@Entity
+public abstract class Drink extends Prodotti implements MenuItem {
+	private String nutritionalInfo;
 
 }

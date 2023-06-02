@@ -1,5 +1,7 @@
 package com.example.U4D16;
 
+import com.example.U4D16.entities.MenuItem;
+
 import lombok.Getter;
 import lombok.Setter;
 
